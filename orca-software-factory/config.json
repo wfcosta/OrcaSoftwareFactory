@@ -1,0 +1,22 @@
+{
+  "base_branch": "main",
+  "checks": [
+    "Replace with the repository's test command",
+    "Replace with its lint/typecheck/build commands when applicable"
+  ],
+  "protected_paths": [
+    "**/tests/**",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/AGENTS.md",
+    "**/SECURITY.md"
+  ],
+  "required_reviewers": ["code"],
+  "surface_reviewers": {
+    "security": ["security"],
+    "ui": ["ux", "ui"]
+  },
+  "max_review_rounds": 3,
+  "pr_title": "[Factory] <short change summary>",
+  "pr_body_sections": ["Summary", "Validation", "Review notes", "Closes #<issue>"]
+}
