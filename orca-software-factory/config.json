@@ -35,6 +35,12 @@
     "require_runtime": true,
     "orchestration_experimental": true,
     "default_worker_agent": "codex",
+    "agent_overrides": {
+      "builder": "codex",
+      "reviewer-security": "claude",
+      "reviewer-ux": "claude",
+      "reviewer-ui": "codex"
+    },
     "check_timeout_ms": 900000,
     "empty_waits_before_worker_list": 3,
     "builder_worktree": "new-child",
